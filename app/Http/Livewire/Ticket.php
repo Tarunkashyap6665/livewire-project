@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\SupportTicket;
+use App\Models\SupportTicket;
 use Livewire\Component;
 use Livewire\WithPagination;
 

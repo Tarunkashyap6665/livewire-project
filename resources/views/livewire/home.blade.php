@@ -7,6 +7,7 @@
             <div class="col-md-7 px-2">
                 <livewire:comments/>
             </div>
+          
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Comment;
+use App\Models\Comment;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
@@ -47,6 +47,7 @@ class Comments extends Component
         Storage::disk('public')->put('images/'.$imageName,$img);
         return $imageName;
     }
+    
     public function addComment(){
         $this->validate([
             'newComment'=>'required|max:100',

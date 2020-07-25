@@ -23,6 +23,7 @@
                                 <a href="/register" class="text-info">Register here</a>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>

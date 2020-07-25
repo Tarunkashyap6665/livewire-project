@@ -1,6 +1,5 @@
 <div class="px-2 border bg-white {{$ticketId==0?'d-none':'d-block'}}">
-
-
+    </div>
     <h2 class="text-center mt-3">Comments</h2>
     <hr>
     @error('newComment')
@@ -24,6 +23,7 @@
         @endif
         <div class="form-group">
             <input id="image" wire:change="$emit('fileChoosen')" class="form-control-file" type="file" name="image">
+           
         </div>
     </section>
     <form action="" wire:submit.prevent="addComment">
@@ -58,6 +58,7 @@
                 @endif
                 <span class="ml-5 d-inline-block" wire:click="remove({{$comment->id}})"
                     style="font-size:20px;font-weight:bolder;float: right;color:rgb(224, 94, 94);cursor:pointer;">&times;</span>
+
                 </div>
                 
             </div>
